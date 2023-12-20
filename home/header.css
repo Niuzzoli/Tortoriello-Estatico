@@ -1,0 +1,233 @@
+/*empieza header*/
+
+a {
+    text-decoration: none;
+}
+
+.upper-row p {
+    font-size: .9rem;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(red, red), linear-gradient(#F1F2EB, #F1F2EB);
+    background-size: 0 100%, auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.col-auto{
+    display: flex;
+    align-items: center;
+}
+/* ---------------------------------- Upper row styles ------------------------------------- */
+
+
+/* ---------------------------------- Bottom row styles ------------------------------------- */
+.bottom-section .col-auto {
+    font-size: .9rem;
+    padding: 1px 12px;
+    margin: 4px;
+    border-radius: 2px;
+    background-image: linear-gradient(#1d6f06, #1d6f06);
+    background-size: 100% 0, auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.bottom-section .col-auto:hover {
+    color: #fff;
+    background-size: 100% 100%, auto;
+}
+
+.taller {
+    position: absolute;
+    cursor: pointer;
+    background: red;
+    border-radius: 2px;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+    transition: all .2s;
+    transform: translateY(20px);
+}
+
+.taller:hover {
+    background: white;
+}
+.text-responsive::before {
+    content: attr(desktop);
+}
+/* ---------------------------------- Bottom row styles ------------------------------------- */
+
+.container-hamburger {
+  max-width: 1050px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.navbar-hamburger {
+  width: 100%;
+  display: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+.navbar-hamburger .nav-container li {
+  list-style: none;
+}
+
+.navbar-hamburger .nav-container a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar-hamburger .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar-hamburger .menu-items {
+  padding-top: 120px;
+  padding-right: 20px;
+  height: 100vh;
+  width: 60vh;
+  transform: translateX(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -150px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: end;
+  background: #1d6f06c4;
+}
+
+.navbar-hamburger .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(-99px);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+
+@media (max-width: 991px){
+    .navbar-hamburger {
+      display: block;
+    }
+    .container {
+      width: 100% !important;
+      background: #1d6f06c4;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    .text-responsive::before{
+        content: attr(phone);
+    }
+    .bottom-section .col-auto {
+      pointer-events: none;
+    }
+    .col-auto{
+      display: none;
+    }
+}
+
+@media (max-width: 580px){
+  .container {
+    width: 100% !important;
+  }
+  .logo-transparente {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-letras {
+    height: 30px;
+  }
+  .col-auto {
+    display: none;
+  }
+}
+
+
+/*termina header*/
