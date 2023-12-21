@@ -41,5 +41,74 @@ nav ul li a{
 }
 
 li a:hover{
+    color: red;
     transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url();
+    background-size: cover;
+    background-position: center center;
+    height: calc(70vh - 60px);
+}
+
+@media (max-width: 405px){
+    nav{
+        height: 120px;
+    }
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1140px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: green;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;       
+    }
 }
