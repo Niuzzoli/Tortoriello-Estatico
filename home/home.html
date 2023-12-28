@@ -5,13 +5,13 @@
   <title>PTortorielloWebSite</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/images/logo-transparente.png">
+  <link rel="icon" type="image/x-icon" href="/assest/images/logo-transparente.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="/home/footer.css">
-  <link rel="stylesheet" href="/home/header.css">
+  <link rel="stylesheet" href="/nuevoheader.css">
   <link rel="stylesheet" href="/home/home.css">
 </head>
 <body>
@@ -19,131 +19,171 @@
 <!--empieza header-->
 
 
-<div class="container text-center">
-
-  <!-- Bottom section -->
-  <div class="row mt-2 bottom-section">
-      <div class="col">
-          <div>
-              <a href="/home"><img src="/assest/images/logo-transparente.png" width="60" height="60" class="logo-transparente me-2"></a>
-              <a href="/home"><img src="/assest/images/tortoriello-logotipo.png" alt="Tortoriello" height="30" class="logo-letras"></a>
-          </div>
-      </div>
-      <div class="col-auto">
-
-          <a href="/home" >INICIO</a>
-          
-      </div>
-      <div class="col-auto">
-          <div class="styled-dropdown">
-              <a href="/servicios">SERVICIOS</a>
-             <!-- <div class="styled-dropdown-content">
-                 <div class="styled-dropdown-menu">
-                     <div class="styled-dropdown-triangle"></div>
-                     <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                  </div>
-              </div> -->
-          </div>
-      </div>
-      <div class="col-auto">
-
-          <a href="/clientes">CLIENTES</a>
-          
-      </div>
-      <div class="col-auto">
-          <a href="/recursos">RECURSOS</a>
-      </div>
-      <div class="col-auto">
-          <a href="/about">ACERCA</a>
-      </div>
-      <div class="col-auto">
-      
-          <a href="/contacto">CONTACTO</a>
-          
-      </div>
-      <!-- <div class="col d-flex justify-content-end">
-          <div class="taller" style="z-index: 10;">
-              <p style="padding: 8px 0 0 0; margin:0; color: black; font-weight: bold; font-size: 1.1rem;">Taller</p>
-              <p style="padding: 0px 20px 8px; margin: 0; color: black; font-size: .7rem;">Acceso</p>
-          </div>
-      </div> -->
-  </div>
-
-  <!-- Responsive menu -->
-  <div class="navbar-hamburger">
-      <div class="container-hamburger nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          
-          <div class="menu-items">
-              <li><a href="/home">INICIO</a></li>
-              <li><a href="/servicios">SERVICIOS</a></li>
-              <li><a href="/clientes">CLIENTES</a></li>
-              <li><a href="/recursos">RECURSOS</a></li>
-              <li><a href="/about">ACERCA</a></li>
-              <li><a href="/contacto">CONTACTO</a></li>
-          </div>
-
-      </div>
-  </div>
-</div>
-  
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="/home/home.html" class="enlace">
+            <img src="/assest/images/logo-transparente.png" alt="" class="logo">
+            <img src="/assest/images/tortoriello-logotipo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Clientes</a></li>
+            <li><a href="">Recursos</a></li>
+            <li><a href="">Acerca</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>    
+    <section></section>
 
 <!--termina header-->
 
 
 
 
-<!--empiza carousel-->
+<!--empiza carousel
+    
+    <div class="carousel">
+        
+        
+        <header class="main-post-wrapper">
+            
+            <div class="slides">
+                <article class="main-post main-post--active">
+                    <div class="main-post__image">
+                        
+                        <video autoplay muted loop>
+                            <source src="/assest/videos/trucks/01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </article>         
+            </div>
+            
+        </header>
+        
+    </div>
+    
+    <div class="slider-container">
+        
+        <div class="slider">
+            <ul>
+                <li><img src="/assest/images/fotos-slider/camion-nieve.jpeg" alt=""></li>
+                <li><img src="/assest/images/fotos-slider/camion-nievecostado.jpeg" alt=""></li>
+                <li><img src="/assest/images/fotos-slider/camion-nonieve.jpeg alt="></li>
+                <li><img src="/assest/images/fotos-slider/camion-nieve.jpeg" alt=""></li>
+            </ul>        
+        </div>
+        
+    </div>
+    
+    
+-->
 
-<div class="carousel">
 
-  
-  <header class="main-post-wrapper">
-      
-      <div class="slides">
-          <article class="main-post main-post--active">
-              <div class="main-post__image">
-                  
-                  <video autoplay muted loop>
-                      <source src="/assest/videos/trucks/01.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
-          </article>         
-      </div>
-      
-  </header>
+    <!--termina carousel-->
 
+
+
+    <!--empieza equipamiento-->
+
+
+<div class="stat-bar">
+    <div class="stat">
+        <img src="/assest/images/equipamiento/camion.png" alt="">
+        <span class="stat-number">65</span>
+        <h3>Equipos propios</h3>
+    </div>
+
+    <div class="stat">
+        <img src="/assest/images/equipamiento/terreno.png" alt="">
+        <span class="stat-number">45.000</span>
+        <h3>mts. cuadrados</h3>
+    </div>
+
+    <div class="stat">
+        <img src="/assest/images/equipamiento/industria.png" alt="">
+        <span class="stat-number">2700</span>
+        <h3>mts. cuadrados cubiertos</h3>
+    </div>
+
+    <div class="stat">
+        <img src="/assest/images/equipamiento/taller.png" alt="">
+        <span class="stat-number">4</span>
+        <h3>Talleres propios</h3>
+    </div>
 </div>
 
-<div class="slider-container">
-  
-  <div class="slider">
-      <ul>
-          <li><img src="/assest/images/fotos-slider/camion-nieve.jpeg" alt=""></li>
-          <li><img src="/assest/images/fotos-slider/camion-nievecostado.jpeg" alt=""></li>
-          <li><img src="/assest/images/fotos-slider/camion-nonieve.jpeg alt="></li>
-          <li><img src="/assest/images/fotos-slider/camion-nieve.jpeg" alt=""></li>
-      </ul>        
-  </div>
-  
+
+<!--termina equipamiento-->
+
+
+
+
+<!--empieza servicios-card-->
+
+
+<div class="row">
+    
+    <h1>Nuestros servicios</h1>
+    
+    <div class="col">
+        <div class="card">
+            <img src="/assest/images/servicios/camion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">GLP</h4>
+                <p class="card-text">Transporte, carga y distribución de gas Licuado de Petroleo Nacional e Internacional</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="card">
+            <img src="/assest/images/servicios/frutas_transporte.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Cargas Refrigeradas</h4>
+                <p class="card-text">Transporte de cargas refrigeradas Nacional e Internacionalmente</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="card">
+            <img src="/assest/images/servicios/metalgas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Metal Gas</h4>
+                <p class="card-text">Fabricación, Inspección, reparación, mantenimiento y rehabilitación de recipientes de cargas peligrosas sometidos a presión, fijos y móviles.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="card">
+            <img src="/assest/images/servicios/gasolina.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Combustibles Liquidos</h4>
+                <p class="card-text">Transporte, logística, distribución y carga de combustibles líquidos con tanques de 53 a 57 mts3.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+        <div class="card">
+            <img src="/assest/images/servicios/liquido.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Gas Comprimido Industrial y Medicinal</h4>
+                <p class="card-text">Transporte, carga y distribución de gas comprimido industrial y medicinal.</p>
+            </div>
+        </div>
+    </div>
+    
 </div>
-  
-
-<!--termina carousel-->
 
 
-
-
-
-
+<!--empieza servicios-card-->
 
 
 

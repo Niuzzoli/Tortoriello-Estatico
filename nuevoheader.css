@@ -1,9 +1,7 @@
 *{
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    list-style: none;
-    block-size: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -38,11 +36,13 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+    font-family: "roboto", "arial", sans-serif;
 }
 
 li a:hover{
     color: red;
-    transition: .5s;
 }
 
 .checkbtn{
@@ -60,16 +60,17 @@ li a:hover{
 }
 
 section{
-    background: url();
+    background: url(/assest/images/trucks/06.jpg);
     background-size: cover;
     background-position: center center;
     height: calc(70vh - 60px);
 }
 
-@media (max-width: 405px){
+@media (max-width: 422px){
     nav{
         height: 120px;
     }
+
 }
 
 @media (max-width: 952px){
