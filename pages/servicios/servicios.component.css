@@ -1,20 +1,20 @@
 h1{
-    padding:120px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
     text-align: center;
     font-weight: bolder;
 }
 
-h4{
+.col h4{
     text-align: center;
 }
 
-p{
+.col p{
     text-align: center;
     padding: 0px 0px 0px 0px;
     margin: 0;
 }
 
-a{
+.col a{
     color: green;
 }
 
@@ -30,7 +30,7 @@ a{
    padding: 0px 150px 0px 150px;
 }
 
-img{
+.col img{
     height: 40px;
     object-fit: contain;
 }

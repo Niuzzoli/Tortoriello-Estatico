@@ -1,30 +1,123 @@
-<div class="container" data-aos="zoom-in">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>PTortorielloWebSite</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/assest/images/logo-transparente.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="/home/footer.css">
+  <link rel="stylesheet" href="/nuevoheader.css">
+  <link rel="stylesheet" href="/pages/recursos/recursos.component.css">
+  <script>
+    AOS.init();
+  </script>
+</head>
+<body>
+
+<!--empieza header-->
+
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="/home/home.html" class="enlace">
+            <img src="/assest/images/logo-transparente.png" alt="" class="logo">
+            <img src="/assest/images/tortoriello-logotipo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="/home/home.html">Inicio</a></li>
+            <li><a href="/pages/servicios/servicios.component.html">Servicios</a></li>
+            <li><a href="/pages/pagclientes/pagclientes.component.html">Clientes</a></li>
+            <li><a href="/pages/recursos/recursos.component.html">Recursos</a></li>
+            <li><a href="/pages/about/about.component.html">Acerca</a></li>
+            <li><a href="/pages/contact-us/contact-us.component.html">Contacto</a></li>
+        </ul>
+    </nav>    
+
+<!--termina header-->
+
+<div class="container">
 
     <h1>Nuestros Recursos</h1>
 
     <div class="row">
         <div class="col">
-            <img src="/assets/images/equipamiento/camion.png" alt="">
+            <img src="/assest/images/equipamiento/camion.png" alt="">
             <h2>65 Equipos propios</h2>
             <p>65 Equipos propios, marcas Scania Mercedes Benz, Iveco y 22 equipos subcontratados (Promedio de antigüedad de los modelos de nuestras flotas 3 años).</p>
         </div>
 
         <div class="col">
-            <img src="/assets/images/equipamiento/terreno.png" alt="">
+            <img src="/assest/images/equipamiento/terreno.png" alt="">
             <h2>45.000 metros cuadrados</h2>
             <p>Nuestra base operativa central cuenta con 45.000 mts. cuadrados para estacionamiento de unidades.</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <img src="/assets/images/equipamiento/industria.png" alt="">
+            <img src="/assest/images/equipamiento/industria.png" alt="">
             <h2>2700 metros cuadrados cubiertos</h2>
             <p>2700 Mts2 cubiertos de infraestructura edilicia y amplio espacio.</p>
         </div>
         <div class="col">
-            <img src="/assets/images/equipamiento/taller.png" alt="">
+            <img src="/assest/images/equipamiento/taller.png" alt="">
             <h2>4 Talleres propios</h2>
             <p>Contamos con 4 talleres de distintas areas, un taller de repruebas, un taller mecanico, un taller de pintura y un taller de arenado</p>
         </div>
     </div>
 </div>
+
+<!--empieza footer-->
+
+
+<script src="https://kit.fontawesome.com/497b208e85.js" crossorigin="anonymous"></script>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <h4>DATA FISCAL</h4>
+                <a href="/assest/images/datafiscal2.pdf" target="_blank">
+                    <img src="/assest/images/datafiscal.jpg" alt="Data fiscal">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h4>CONTACTO</h4>
+            <P>Dirección Postal: Ruta 22 KM 1215 (C.P. 8324)</P>
+            <P>Ciudad: Cipolletti</P>
+            <P>Provincia: Río Negro</P>
+            <P>País: Argentina</P>
+            <P><a href="/contacto" id="telefono"><i class="fa-solid fa-phone"></i>&nbsp; <b>+54 299  478 1861</b></a></P>
+            <P><a href="mailto:administracion@ptortoriello.com.ar" id="contacto">E-mail: administracion@ptortoriello.com.ar</a></P>
+        </div>
+        <div class="box">
+            <h4>TRABAJÁ CON NOSTROS</h4>
+
+            <a href="/postulate" id="contacto" class="fa-solid fa-person-circle-plus fa-2xl"></a>
+
+            <p>Has click aquí para completar el siguiente formulario y ponerte en contacto con nuestro departamento de recursos humanos.</p>
+        </div>
+        <div class="box">
+            <h4>NUESTRAS REDES</h4>
+            <div class="red-social">
+                <a href="https://www.facebook.com/ptortorielloycia" class="fa-brands fa-facebook-f" target="_blank"></a>
+                <a href="https://www.instagram.com/ptortoriello/?hl=es-la&__coig_restricted=1" class="fa-brands fa-instagram" target="_blank"></a>
+                <a href="https://api.whatsapp.com/send/?phone=5492994043958&text=Contacto+desde+web+Tortoriello&type=phone_number&app_absent=0" class="fa-brands fa-whatsapp" target="_blank"></a>
+                <a href="https://twitter.com/TRANTORTORIELLO" class="fa-brands fa-x-twitter" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--termina footer-->
+
+</body>
+</html>

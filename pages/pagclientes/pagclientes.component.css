@@ -1,5 +1,4 @@
 body {
-    display: flex;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -15,14 +14,14 @@ body {
 }
 
 .row {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 #cuadro {
     padding-top: 45px;
 }
 
-p {
+.col-3 p {
     text-align: justify;
     color: rgb(112, 123, 124);
 }
@@ -42,7 +41,7 @@ h1 {
     border-width: 0px 2px 0px 2px;
 }
 
-img {
+.col img {
     object-fit: contain;
     max-width: 150px;
     min-height: 150px;
