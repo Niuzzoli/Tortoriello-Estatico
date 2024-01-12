@@ -1,16 +1,19 @@
 nav{
-    background-color: green;
-    height: 80px;
+    background-color: rgba(0, 88, 0, 0.836);
+    height: 2.3cm;
     width: 100%;
 }
 
 .enlace{
-    position: absolute;
-    padding: 20px 50px;
+    position: relative;
+    line-height: 2.3cm;
+    left: 35px;
 }
+
 
 .logo{
     height: 40px;
+    display: inline;
 }
 
 nav ul{
@@ -20,14 +23,14 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 2.3cm;
     margin: 0px 5px;
 }
 
 nav ul li a{
     color: white;
     font-size: 18px;
-    padding: 7px 13px;
+    padding: 15px 13px;
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -36,7 +39,8 @@ nav ul li a{
 }
 
 li a:hover{
-    color: red;
+    background-color: rgba(0, 70, 0, 0.8); /* Verde más oscuro con transparencia */
+
 }
 
 .checkbtn{
@@ -60,9 +64,14 @@ section{
     height: calc(70vh - 60px);
 }
 
-@media (max-width: 422px){
+
+@media (max-width: 485px){
     nav{
-        height: 120px;
+        height: 140px;
+    }
+
+    .enlace{
+        line-height: 1.6cm;
     }
 
 }
@@ -77,20 +86,22 @@ section{
     }
 }
 
-@media (max-width: 1140px){
+@media (max-width: 1157px){
     .checkbtn{
         display: block;
+        padding-left: 50px;
     }
 
     ul{
         position: fixed;
         width: 70%;
         height: 100vh;
-        background: green;
+        background: rgba(0, 88, 0, 0.836);
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 11;
     }
 
     nav ul li{

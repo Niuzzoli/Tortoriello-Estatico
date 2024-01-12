@@ -9,12 +9,17 @@ body {
     /* Ajusta la altura del body al 100% del viewport */
 }
 
+.container{
+    display: flex;
+    align-items: center;
+}
+
 .celu{
     display: none;
 }
 
 .row {
-    padding-top: 20px;
+    padding-top: 0;
 }
 
 #cuadro {
@@ -40,6 +45,8 @@ h1 {
     color: rgb(28, 40, 51);
     border-width: 0px 2px 0px 2px;
 }
+
+
 
 .col img {
     object-fit: contain;

@@ -10,13 +10,10 @@ body{
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, p{
-    font-family: sans-serif;
-}
 
 /*empieza carousel*/
 
-
+/*
 .carousel {
     min-height: 70vh;
     max-height: 70vh;
@@ -127,13 +124,15 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
+*/
+
 .mivideo video{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 70vh;
+    object-fit: cover;
     top: 0;
-    z-index: 1;
-    display: none;
+    z-index: -1;
 }
 
 
@@ -150,13 +149,13 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 0px 0px 85px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     box-shadow: 2px 4px 8px rgb(180, 180, 180);
-    z-index: 3;
-    top: 590px;
+    top: 562px;
+    left: 5%;
 }
 
 .stat {
@@ -187,9 +186,9 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 
-@media (max-width:930px) {
+@media (max-width:590px) {
     .stat-bar {
-        display: none;
+        display: inline;
     }
     section {
         position: relative;
@@ -225,13 +224,13 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 .row{
-    margin-top: 200px;
+    margin-top: 800px;
 }
 
 .row h1{
     text-align: center;
-    position: absolute;
-    padding-top: 0px;
+    position: relative;
+    margin: 0 0 0px 0;
 }
 
 .row h4 {
@@ -276,6 +275,12 @@ div .card-body{
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 6px 6px 10px grey !important;
+}
+
+@media (max-width:590px) {
+    .row{
+        margin: 1300px 0 0 0;
+    }
 }
 
 @media (max-width: 930px) {
@@ -366,6 +371,9 @@ div .card-body{
 
 /*empieza imagen camion nieve*/
 
+#serif h1, h2, h3, h4, h5, h6{
+    font-family: sans-serif;
+}
 
 /*empieza politica*/
 
