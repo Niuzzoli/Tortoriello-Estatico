@@ -8,6 +8,7 @@ nav{
     position: relative;
     line-height: 2.3cm;
     left: 35px;
+    text-decoration: none;
 }
 
 
@@ -92,7 +93,7 @@ section{
         padding-left: 50px;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 70%;
         height: 100vh;
