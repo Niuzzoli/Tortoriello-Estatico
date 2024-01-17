@@ -43,7 +43,7 @@ nav ul li a{
     font-family: "roboto", "arial", sans-serif;
 }
 
-li a:hover{
+nav li a:hover{
     background-color: rgba(0, 70, 0, 0.8); /* Verde más oscuro con transparencia */
 
 }
@@ -70,9 +70,9 @@ section{
 }
 
 
-@media (max-width: 485px){
+@media (max-width: 438px){
     nav{
-        height: 120px;
+        height: 130px;
     }
 
     .enlace{
@@ -91,7 +91,7 @@ section{
     }
 }
 
-@media (max-width: 1157px){
+@media (max-width: 1249px){
     .checkbtn{
         display: block;
         padding-left: 50px;
