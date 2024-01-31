@@ -10,11 +10,13 @@
     <link rel="icon" type="image/x-icon" href="/assest/images/logo-transparente.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/footer.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/index.css">
-
+    
 </head>
+    
 
 <body>
 
@@ -102,7 +104,7 @@
 
         <h1>Nuestros servicios</h1>
 
-        <div class="col">
+        <div class="col" data-aos="fade-up">
             <div class="card">
                 <img src="/assest/images/servicios/camion.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -112,7 +114,7 @@
             </div>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="fade-up">
             <div class="card">
                 <img src="/assest/images/servicios/frutas_transporte.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -122,7 +124,7 @@
             </div>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="fade-up">
             <div class="card">
                 <img src="/assest/images/servicios/metalgas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -132,7 +134,7 @@
             </div>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="fade-up">
             <div class="card">
                 <img src="/assest/images/servicios/gasolina.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -142,7 +144,7 @@
             </div>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="fade-up">
             <div class="card">
                 <img src="/assest/images/servicios/liquido.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -172,7 +174,7 @@
     <!--empieza Organizacion-->
 
 
-    <div class="container">
+    <div class="container" data-aos="fade-left">
         <div class="organizacion" id="serif">
 
             <h1>
@@ -227,7 +229,7 @@
     <!--empieza politica-->
 
 
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="politica" id="serif">
             <h1>Política de Gestión (Corporativa)</h1>
 
@@ -437,6 +439,10 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </footer>
 
 
