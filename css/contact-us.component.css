@@ -1,26 +1,25 @@
-
-.iconos{
+.iconos {
     color: green;
     font-size: 40px;
 }
 
-.row{
+.row {
     margin-bottom: 20px;
 }
 
-h4{
+h4 {
     transition: all 0.5s ease;
     color: black;
 }
 
-h4:hover{
+h4:hover {
     color: green;
 }
 
-h1{
+h1 {
     margin: 20px 0px 20px 0px;
 }
 
-a{
+a {
     text-decoration: none;
 }

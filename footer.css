@@ -1,6 +1,5 @@
 /*empieza footer*/
 
-
 @import url(https://fonts.google.com/);
 * {
     margin: 0;
@@ -13,7 +12,7 @@ footer {
     width: 100%;
 }
 
-a{
+a {
     cursor: pointer;
 }
 
@@ -24,7 +23,7 @@ a{
     transition: all 0.5s ease;
 }
 
-#contacto:hover{
+#contacto:hover {
     color: #1d6f06;
 }
 

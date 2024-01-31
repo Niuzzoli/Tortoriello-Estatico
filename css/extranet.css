@@ -1,10 +1,10 @@
-.trabajo{
+.trabajo {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
- 
-#listatrabajo{
+
+#listatrabajo {
     padding: 10px;
     margin: 50px;
     background-color: rgb(255, 102, 0);
@@ -14,17 +14,17 @@
     transition: ease-in 0.5s;
 }
 
-#listatrabajo:hover{
+#listatrabajo:hover {
     background-color: rgba(0, 88, 0, 0.836);
 }
 
-h1{
+h1 {
     padding: 40px 0px 20px 0px;
     text-align: center;
     font-weight: bolder;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }

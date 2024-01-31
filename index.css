@@ -13,7 +13,6 @@ body {
 
 /*empieza video*/
 
-
 .mivideo video {
     position: absolute;
     width: 100%;
@@ -259,7 +258,7 @@ h6 {
 
 /*empieza politica*/
 
-.tick{
+.tick {
     color: green;
     float: left;
     padding: 0 5px 0 0;
