@@ -174,7 +174,7 @@
     <!--empieza Organizacion-->
 
 
-    <div class="container" data-aos="fade-left">
+    <div class="container" data-aos="fade-right">
         <div class="organizacion" id="serif">
 
             <h1>
@@ -385,8 +385,10 @@
 
 
 
-
-
+    <div class="to-top" (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+    
     <!--empieza footer-->
 
 
