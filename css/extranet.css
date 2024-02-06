@@ -1,34 +1,36 @@
 .trabajo {
     color: black;
     text-decoration: none;
-    font-weight: bold;
-}
-
-#listatrabajo {
-    padding: 10px;
-    margin: 25px;
-    background-color: #DFDFDF;
-    border: 3px solid;
-    border-color: #D8D8D8;
-    border-radius: 20px;
-    list-style: none;
-    text-align: center;
-    transition: ease-in 0.5s;
-}
-
-#listatrabajo:hover {
-    border-color: rgba(0, 88, 0, 0.836);
+    font-weight: 500;
 }
 
 h1 {
-    padding: 40px 0px 20px 0px;
+    margin: 40px 0px 20px 0px;
     text-align: center;
     font-weight: bolder;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.col{
+    background-color: #DFDFDF;
+    border: 3px solid;
+    border-color: #D8D8D8;
+    border-radius: 10px;
+    transition: 0.8s ease;
+    margin: 30px 100px 30px 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.col:hover {
+    border-color: green;
+}
+
+.col img{
+    margin: 25px 20px 10px 20px;
+    height: 60px;
+    object-fit: contain;
+    align-items: center;
 }
 
 .logotipos {
