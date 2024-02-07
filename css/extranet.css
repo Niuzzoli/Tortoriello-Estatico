@@ -16,15 +16,14 @@ h1 {
     border-color: white;
     border-radius: 10px;
     transition: 0.8s ease;
-    margin: 30px 100px 30px 100px;
+    margin: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .col:hover {
-    border-color: green;
-    transform: translateY(-10px);
+    transform: scale(1.1) translateY(-10px);
 }
 
 .col img {
