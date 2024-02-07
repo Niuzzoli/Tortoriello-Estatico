@@ -10,10 +10,10 @@ h1 {
     font-weight: bolder;
 }
 
-.col{
-    background-color: #DFDFDF;
+.col {
+    background-color: white;
     border: 1px solid;
-    border-color: #D8D8D8;
+    border-color: white;
     border-radius: 10px;
     transition: 0.8s ease;
     margin: 30px 100px 30px 100px;
@@ -24,15 +24,13 @@ h1 {
 
 .col:hover {
     border-color: green;
+    transform: translateY(-10px);
 }
 
-.col img{
+.col img {
     margin: 25px 20px 10px 20px;
     height: 60px;
     object-fit: contain;
     align-items: center;
-}
-
-.logotipos {
-    height: 30px;
+    border-radius: 30px;
 }
