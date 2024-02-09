@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+p{
+    text-align: justify;
+}
+
 
 /*empieza video*/
 
@@ -121,6 +125,7 @@ body {
 
 .card p {
     padding: 0px 0px 0px 10px;
+    text-align: left;
 }
 
 div .card-body {

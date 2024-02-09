@@ -9,6 +9,10 @@ h1 {
     padding: 10px;
 }
 
+p{
+    text-align: justify;
+}
+
 .col {
     margin-bottom: 0px;
     padding-bottom: 0px;
