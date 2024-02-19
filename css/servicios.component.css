@@ -15,7 +15,7 @@ h1 {
 }
 
 .col {
-    padding: 20px 0px 0px 0px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ h1 {
     padding: 0px 0px 50px;
 }
 
-.container {
+.container-fluid {
     padding: 0px 150px 0px 150px;
 }
 
@@ -40,6 +40,18 @@ h1 {
 
 @media (max-width:770px){
     .col{
-        display:inline;
+        padding: 20px 10px 0 10px;
+    }
+    
+    .row{
+        padding: 0;
+    }
+
+    .embed-responsive-item {
+        padding-bottom: 20px;
+    }
+
+    .container-fluid{
+        padding: 0 6rem 0 6rem;
     }
 }

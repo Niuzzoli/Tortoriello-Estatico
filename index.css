@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-p{
+p, li{
     text-align: justify;
 }
 
@@ -249,7 +249,7 @@ div .card-body {
 }
 
 
-/*empieza imagen camion nieve*/
+/*termina imagen camion nieve*/
 
 #serif h1,
 h2,
@@ -315,7 +315,7 @@ h6 {
 }
 
 
-/*empieza politica*/
+/*termina politica*/
 
 
 /*empieza clientes*/
@@ -375,4 +375,34 @@ h6 {
 }
 
 
-/*empieza clientes*/
+/*termina clientes*/
+
+
+/*empiza scroll*/
+
+
+.scroll-arrow {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: rgba(66, 66, 66, 0.5);
+    color: #fff;
+    padding: 0 15px 0 15px;
+    border-radius: 20%;
+    text-decoration: none;
+    transition: ease 0.6s;
+  }
+  
+  .scroll-arrow.show {
+    display: block;
+  }
+
+
+.scroll-arrow:hover{
+    transform: translateY(-5px);
+} 
+
+
+/*termina scroll*/  
