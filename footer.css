@@ -10,6 +10,7 @@
 
 footer {
     width: 100%;
+    text-align: justify;
 }
 
 a {
@@ -32,6 +33,7 @@ a {
     color: #1d6f06;
     text-decoration: none;
     font-family: "roboto", "arial", sans-serif;
+    font-weight: bold;
 }
 
 .pie-pagina {

@@ -30,6 +30,7 @@ nav ul li {
     display: inline-block;
     line-height: 2.3cm;
     margin: 0px 5px;
+    text-align: center;
 }
 
 nav ul li a {
