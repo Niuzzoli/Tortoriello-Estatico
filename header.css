@@ -82,6 +82,10 @@ section {
     .enlace {
         line-height: 1.6cm;
     }
+    .logo1{
+        padding-top: 15px;
+        height: 75px;
+    }
 }
 
 @media (max-width: 952px) {
@@ -119,10 +123,5 @@ section {
     }
     #check:checked~ul {
         left: 0;
-    }
-
-    .logo1{
-        padding-top: 15px;
-        height: 75px;
     }
 }
