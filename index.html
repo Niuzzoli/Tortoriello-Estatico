@@ -71,25 +71,25 @@
     <div class="stat-bar">
         <div class="stat">
             <img src="/assest/images/equipamiento/camion.png" alt="">
-            <span class="stat-number">65</span>
+            <span class="stat-number" id="contador1">0</span>
             <h3>Equipos propios</h3>
         </div>
 
         <div class="stat">
             <img src="/assest/images/equipamiento/terreno.png" alt="">
-            <span class="stat-number">45.000</span>
+            <span class="stat-number" id="contador2">0</span>
             <h3>Mts. cuadrados</h3>
         </div>
 
         <div class="stat">
             <img src="/assest/images/equipamiento/industria.png" alt="">
-            <span class="stat-number">2700</span>
+            <span class="stat-number" id="contador3">0</span>
             <h3>Mts. cuadrados cubiertos</h3>
         </div>
 
         <div class="stat">
             <img src="/assest/images/equipamiento/taller.png" alt="">
-            <span class="stat-number">4</span>
+            <span class="stat-number" id="contador4">0</span>
             <h3>Talleres propios</h3>
         </div>
     </div>
@@ -422,6 +422,29 @@
         </script>
         <script src="toparrow.js">
         </script>
+        <script>
+            function iniciarContador(id, valorFinal, duracion) {
+            var contador = document.getElementById(id);
+            var valorInicial = 0;
+            var paso = Math.ceil(valorFinal / (duracion / 100));
+
+            function contar() {
+                if (valorInicial <= valorFinal) {
+                contador.innerHTML = valorInicial;
+                valorInicial += paso;
+                setTimeout(contar, 10);
+                }
+            }
+
+            contar();
+            }
+
+            iniciarContador("contador1", 65, 6500);
+            iniciarContador("contador2", 45000, 5000);
+            iniciarContador("contador3", 2700, 3000);
+            iniciarContador("contador4", 4, 3000);
+        </script>
+
     </footer>
 
 
