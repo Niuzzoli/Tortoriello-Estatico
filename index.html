@@ -423,7 +423,7 @@
         <script src="toparrow.js">
         </script>
         <script>
-            function iniciarContador(id, valorFinal, duracion) {
+            function iniciarContador(id, valorFinal, duracion, textoFinal) {
             var contador = document.getElementById(id);
             var valorInicial = 0;
             var paso = Math.ceil(valorFinal / (duracion / 100));
@@ -433,16 +433,18 @@
                 contador.innerHTML = valorInicial;
                 valorInicial += paso;
                 setTimeout(contar, 20);
+                } else {
+                    contador.innerHTML = textoFinal;
                 }
             }
 
             contar();
             }
 
-            iniciarContador("contador1", 200, 5000, "Más de 150");
-            iniciarContador("contador2", 45000, 5000);
-            iniciarContador("contador3", 2700, 5000);
-            iniciarContador("contador4", 4, 5000);
+            iniciarContador("contador1", 200, 5000, "+200");
+            iniciarContador("contador2", 45000, 5000, "45.000");
+            iniciarContador("contador3", 2700, 5000, "2.700");
+            iniciarContador("contador4", 4, 5000,"4");
         </script>
 
     </footer>
