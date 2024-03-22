@@ -56,7 +56,7 @@ p{
         background-size: cover;
     }
     100%,
-    20% {
+    5% {
         background-image: url(/assest/images/historia/historia1.jpg);
         background-size: cover;
     }
