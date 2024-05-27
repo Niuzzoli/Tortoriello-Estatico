@@ -48,7 +48,7 @@
 
     <!--termina header-->
 
-    
+
 
 
 
@@ -368,7 +368,7 @@
 
 
 
-    
+
     <a class="scroll-arrow" id="scrollArrow">&uarr;</a>
 
 
@@ -424,27 +424,27 @@
         </script>
         <script>
             function iniciarContador(id, valorFinal, duracion, textoFinal) {
-            var contador = document.getElementById(id);
-            var valorInicial = 0;
-            var paso = Math.ceil(valorFinal / (duracion / 100));
+                var contador = document.getElementById(id);
+                var valorInicial = 0;
+                var paso = Math.ceil(valorFinal / (duracion / 100));
 
-            function contar() {
-                if (valorInicial <= valorFinal) {
-                contador.innerHTML = valorInicial;
-                valorInicial += paso;
-                setTimeout(contar, 20);
-                } else {
-                    contador.innerHTML = textoFinal;
+                function contar() {
+                    if (valorInicial <= valorFinal) {
+                        contador.innerHTML = valorInicial;
+                        valorInicial += paso;
+                        setTimeout(contar, 20);
+                    } else {
+                        contador.innerHTML = textoFinal;
+                    }
                 }
-            }
 
-            contar();
+                contar();
             }
 
             iniciarContador("contador1", 200, 5000, "+200");
             iniciarContador("contador2", 45000, 5000, "45.000");
             iniciarContador("contador3", 2700, 5000, "+2.700");
-            iniciarContador("contador4", 4, 5000,"4");
+            iniciarContador("contador4", 4, 5000, "4");
         </script>
 
     </footer>
