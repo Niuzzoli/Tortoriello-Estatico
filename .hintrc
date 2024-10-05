@@ -33,7 +33,8 @@
       "default",
       {
         "ignore": [
-          "iframe[loading]"
+          "iframe[loading]",
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
         ]
       }
     ],

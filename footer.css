@@ -61,6 +61,7 @@ a {
 
 .pie-pagina .grupo-1 .box figure img {
     width: 130px;
+    margin: 10px 0 0 0;
 }
 
 .pie-pagina .grupo-1 .box h4 {
@@ -105,8 +106,8 @@ a {
 
 /*termina footer*/
 
-/*empiza scroll*/
 
+/*empiza scroll*/
 
 .scroll-arrow {
     display: none;
@@ -123,19 +124,18 @@ a {
     transition: ease 0.6s;
     animation: aparecer 0.6s forwards;
 }
-  
-.scroll-arrow.show{
+
+.scroll-arrow.show {
     opacity: 1;
     display: block;
 }
 
 @keyframes aparecer {
     from {
-      opacity: 0;
-      transform: scale(100%);
+        opacity: 0;
+        transform: scale(100%);
     }
 }
 
 
-
-/*termina scroll*/  
+/*termina scroll*/
