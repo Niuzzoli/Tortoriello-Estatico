@@ -109,16 +109,21 @@ p {
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .fotos {
         display: none;
     }
     .slider {
-        height: 42vh;
-        width: 94vw;
+        height: auto;
+        aspect-ratio: 16 / 9; /* para que se adapte con buena proporción */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .fotos-celu {
+        background-size: cover;
         display: flex;
+        width: 100%;
         padding-bottom: 30px;
     }
 }
