@@ -22,20 +22,35 @@ a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    color: white;
-    padding-bottom: 10px;
+    background-color: #1d6f06;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
     transition: all 0.5s ease;
 }
 
-#contacto h6{
+#contacto a{
     color: white;
-    padding: 0 20px 10px 20px;
-    transition: all 0.5s ease;
-    font-size: 20px;
-    line-height: 2px;
+    font-size: small;
 }
 
 #contacto:hover {
+    transform: scale(1.05);
+}
+
+#contactanos {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+    gap: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    transition: all 0.5s ease;
+}
+
+#contactanos:hover {
     color: #1d6f06;
 }
 
