@@ -16,6 +16,32 @@
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="toparrow.js">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.tortoriello.com.ar/#localbusiness",
+        "name": "P. Tortoriello y Cía.",
+        "url": "https://www.tortoriello.com.ar/",
+        "logo": "https://www.tortoriello.com.ar/img/logo.png",
+        "image": "https://www.tortoriello.com.ar/img/logo.png",
+        "telephone": "+542994781861",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ruta Nacional 22 KM 1215",
+            "addressLocality": "Cipolletti",
+            "addressRegion": "Río Negro",
+            "postalCode": "8324",
+            "addressCountry": "AR"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Argentina"
+        },
+        "description": "Empresa argentina especializada en transporte y logística de cargas peligrosas, combustibles y productos especiales, con amplia experiencia en la Patagonia.",
+        "sameAs": []
+        }
+    </script>
 
 </head>
 
@@ -31,8 +57,8 @@
             <i class="fas fa-bars"></i>
         </label>
         <a href="/index.html" class="enlace">
-            <img src="/assest/images/logo-transparente.png" alt="" class="logo1">
-            <img src="/assest/images/tortoriello-logotipo.png" alt="" class="logo">
+            <img src="/assest/images/logo-transparente.png" alt="Logo" class="logo1">
+            <img src="/assest/images/tortoriello-logotipo.png" alt="Logo" class="logo">
         </a>
         <ul>
             <li><a href="/index.html">Inicio</a></li>
@@ -43,7 +69,7 @@
             <li><a href="/contact-us.html">Contacto</a></li>
             <li><a href="/extranet.html">Extranet <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lock" viewBox="0 0 16 16">
                 <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 5.996V14H3s-1 0-1-1 1-4 6-4q.845.002 1.544.107a4.5 4.5 0 0 0-.803.918A11 11 0 0 0 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664zM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1"/>
-              </svg></a></li>
+            </svg></a></li>
         </ul>
     </nav>
 
@@ -59,7 +85,7 @@
     <div class="mivideo">
         
 
-        <video id="video" poster="/assest/images/poster.jpg" loop autoplay muted>
+        <video id="video" poster="/assest/images/poster.jpg" loop autoplay muted playsinline preload="auto">
             <source src="/assest/videos/institucion1080.mp4" type="video/mp4">
             Tu navegador no soporta el video
         </video>
@@ -76,25 +102,25 @@
 
     <div class="stat-bar">
         <div class="stat">
-            <img src="/assest/images/equipamiento/camion.png" alt="">
+            <img src="/assest/images/equipamiento/camion.png" alt="Camion">
             <span class="stat-number" id="contador1">0</span>
             <h3>Equipos propios</h3>
         </div>
 
         <div class="stat">
-            <img src="/assest/images/equipamiento/terreno.png" alt="">
+            <img src="/assest/images/equipamiento/terreno.png" alt="Terreno">
             <span class="stat-number" id="contador2">0</span>
             <h3>Mts. cuadrados</h3>
         </div>
 
         <div class="stat">
-            <img src="/assest/images/equipamiento/industria.png" alt="">
+            <img src="/assest/images/equipamiento/industria.png" alt="Industria">
             <span class="stat-number" id="contador3">0</span>
             <h3>Mts. cuadrados cubiertos</h3>
         </div>
 
         <div class="stat">
-            <img src="/assest/images/equipamiento/taller.png" alt="">
+            <img src="/assest/images/equipamiento/taller.png" alt="Taller">
             <span class="stat-number" id="contador4">0</span>
             <h3>Talleres propios</h3>
         </div>
@@ -111,69 +137,85 @@
 
 
     <div class="row">
-
         <h1>Nuestros Servicios</h1>
+        
+        <div class="row-container">
+            <!-- Primera fila: 3 cartas -->
+            <div class="first-row">
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/camion.png" class="card-img-top" alt="Camion">
+                        <div class="card-body">
+                            <h4 class="card-title">GLP</h4>
+                            <p class="card-text">Transporte, carga y distribución de gas Licuado de Petroleo Nacional e Internacional</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/camion.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">GLP</h4>
-                    <p class="card-text">Transporte, carga y distribución de gas Licuado de Petroleo Nacional e Internacional</p>
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/frutas_transporte.png" class="card-img-top" alt="Frutas Transporte">
+                        <div class="card-body">
+                            <h4 class="card-title">Cargas Refrigeradas</h4>
+                            <p class="card-text">Transporte de cargas refrigeradas Nacional e Internacionalmente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/metalgas.jpg" class="card-img-top" alt="Metal Gas">
+                        <div class="card-body">
+                            <h4 class="card-title">Metal Gas</h4>
+                            <p class="card-text">Fabricación, Inspección, reparación, mantenimiento y rehabilitación de recipientes de cargas peligrosas sometidos a presión, fijos y móviles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda fila: 4 cartas -->
+            <div class="second-row">
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/gasolina.jpg" class="card-img-top" alt="Gasolina">
+                        <div class="card-body">
+                            <h4 class="card-title">Combustibles Liquidos</h4>
+                            <p class="card-text">Transporte, logística, distribución y carga de combustibles líquidos con tanques de 53 a 57 mts3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/liquido.jpg" class="card-img-top" alt="Gas Comprimido Industrial y Medicinal">
+                        <div class="card-body">
+                            <h4 class="card-title">Gas Comprimido Industrial y Medicinal</h4>
+                            <p class="card-text">Transporte, carga y distribución de gas comprimido industrial y medicinal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/arena.jpg" class="card-img-top" alt="Arena">
+                        <div class="card-body">
+                            <h4 class="card-title">Carga de Áridos</h4>
+                            <p class="card-text">Transporte de arenas para la fracturación de petróleo y gas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assest/images/servicios/logistica.png" class="card-img-top" alt="Logistica">
+                        <div class="card-body">
+                            <h4 class="card-title">Logística Primarian Oil&Gas</h4>
+                            <p class="card-text">Logística, transporte y distribución de cargas generales para la industria de Oil&Gas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/frutas_transporte.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Cargas Refrigeradas</h4>
-                    <p class="card-text">Transporte de cargas refrigeradas Nacional e Internacionalmente</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/metalgas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Metal Gas</h4>
-                    <p class="card-text">Fabricación, Inspección, reparación, mantenimiento y rehabilitación de recipientes de cargas peligrosas sometidos a presión, fijos y móviles.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/gasolina.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Combustibles Liquidos</h4>
-                    <p class="card-text">Transporte, logística, distribución y carga de combustibles líquidos con tanques de 53 a 57 mts3.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/liquido.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Gas Comprimido Industrial y Medicinal</h4>
-                    <p class="card-text">Transporte, carga y distribución de gas comprimido industrial y medicinal.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col" data-aos="fade-up">
-            <div class="card">
-                <img src="/assest/images/servicios/arena.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">Carga de Áridos</h4>
-                    <p class="card-text">Transporte de arenas para la fracturación de petróleo y gas.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
@@ -184,7 +226,7 @@
 
     <div class="camion">
 
-        <img src="/assest/images/trucks/1.png" alt="">
+        <img src="/assest/images/trucks/1.png" alt="Camiones">
 
     </div>
 
@@ -237,7 +279,7 @@
 
     <div class="nieve">
 
-        <img src="/assest/images/trucks/2.jpg" alt="">
+        <img src="/assest/images/trucks/2.jpg" alt="Camion Nieve">
 
     </div>
 
@@ -325,7 +367,7 @@
 
 
     <!-- empieza vial -->
- <div class="container" data-aos="fade-right">
+    <div class="container" data-aos="fade-right">
         <div class="politica" id="serif">
             <h1>Política de Seguridad Vial</h1>
 
@@ -388,87 +430,87 @@
     <div>
         <div class="logos">
             <div class="logos-slide">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzipampeana.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzisur.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/cañuelas.jpg" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/hidronqn.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/Logo_de_YPF.jpg" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/distrigas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/peco.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/petrogas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/total.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/ypfgas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/Bodega-Salentein.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/ecofrut.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/expofrut.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/moñoazul.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/pai.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonia norte.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonianfruits.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes combustible liquido/nao.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/abastible.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/gasco.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/gascorona.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/lipigas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes gas/Air-Liquide-logo.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes gas/vitalaire.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/aconcagua.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/beraldi.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/cisa.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/clear.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/dow.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/fox-petrol.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/gasaustral.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/gedeon.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/medanito.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/pluspetrol.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/rodial.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/sapag.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/tgs.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/tomrel.png" alt="">
-                <img src="assest/images/logos patrocinadores/clientes nuevos/transol.png" alt="">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzipampeana.png" alt="Camuzzi Pampeana">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzisur.png" alt="Camuzzi Sur">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/cañuelas.jpg" alt="Canuelas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/hidronqn.png" alt="HidronQN">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/Logo_de_YPF.jpg" alt="YPF">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/distrigas.png" alt="Distrigas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/peco.png" alt="Peco">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/petrogas.png" alt="Petrogas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/total.png" alt="Total">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/ypfgas.png" alt="YPFGas">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/Bodega-Salentein.png" alt="Bodega Salentein">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/ecofrut.png" alt="Ecofrut">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/expofrut.png" alt="Expofrut">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/moñoazul.png" alt="Mono Azul">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/pai.png" alt="PAI">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonia norte.png" alt="Patagonia Norte">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonianfruits.png" alt="Patagonian Fruits">
+                <img src="/assest/images/logos patrocinadores/clientes combustible liquido/nao.png" alt="NAO">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/abastible.png" alt="Abastible">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/gasco.png" alt="Gasco">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/gascorona.png" alt="GasCorona">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/lipigas.png" alt="Lipigas">
+                <img src="/assest/images/logos patrocinadores/clientes gas/Air-Liquide-logo.png" alt="Air Liquide">
+                <img src="/assest/images/logos patrocinadores/clientes gas/vitalaire.png" alt="Vitalaire">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/aconcagua.png" alt="Aconcagua">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/beraldi.png" alt="Beraldi">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/cisa.png" alt="CISA">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/clear.png" alt="Clear">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/dow.png" alt="Dow">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/fox-petrol.png" alt="Fox Petrol">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/gasaustral.png" alt="GasAustral">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/gedeon.png" alt="Gedeon">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/medanito.png" alt="Medanito">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/pluspetrol.png" alt="Pluspetrol">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/rodial.png" alt="Rodial">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/sapag.png" alt="Sapag">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/tgs.png" alt="TGS">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/tomrel.png" alt="Tomrel">
+                <img src="assest/images/logos patrocinadores/clientes nuevos/transol.png" alt="Transol">
             </div>
 
             <div class="logos-slide">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzipampeana.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzisur.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/cañuelas.jpg" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/hidronqn.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/Logo_de_YPF.jpg" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/distrigas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/peco.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/petrogas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/total.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nacionales/ypfgas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/Bodega-Salentein.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/ecofrut.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/expofrut.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/moñoazul.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/pai.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonia norte.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonianfruits.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes combustible liquido/nao.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/abastible.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/gasco.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/gascorona.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes del exterior/lipigas.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes gas/Air-Liquide-logo.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes gas/vitalaire.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/aconcagua.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/beraldi.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/cisa.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/clear.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/dow.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/fox-petrol.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/gasaustral.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/gedeon.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/medanito.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/pluspetrol.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/rodial.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/sapag.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/tgs.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/tomrel.png" alt="">
-                <img src="/assest/images/logos patrocinadores/clientes nuevos/transol.png" alt="">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzipampeana.png" alt="Camuzzi Pampeana">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/camuzzisur.png" alt="Camuzzi Sur">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/cañuelas.jpg" alt="Canuelas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/hidronqn.png" alt="HidronQN">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/Logo_de_YPF.jpg" alt="YPF">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/distrigas.png" alt="Distrigas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/peco.png" alt="Peco">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/petrogas.png" alt="Petrogas">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/total.png" alt="Total">
+                <img src="/assest/images/logos patrocinadores/clientes nacionales/ypfgas.png" alt="YPFGas">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/Bodega-Salentein.png" alt="Bodega Salentein">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/ecofrut.png" alt="Ecofrut">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/expofrut.png" alt="Expofrut">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/moñoazul.png" alt="Mono Azul">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/pai.png" alt="PAI">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonia norte.png" alt="Patagonia Norte">
+                <img src="/assest/images/logos patrocinadores/clientes cargas/patagonianfruits.png" alt="Patagonian Fruits">
+                <img src="/assest/images/logos patrocinadores/clientes combustible liquido/nao.png" alt="NAO">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/abastible.png" alt="Abastible">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/gasco.png" alt="Gasco">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/gascorona.png" alt="GasCorona">
+                <img src="/assest/images/logos patrocinadores/clientes del exterior/lipigas.png" alt="Lipigas">
+                <img src="/assest/images/logos patrocinadores/clientes gas/Air-Liquide-logo.png" alt="Air Liquide">
+                <img src="/assest/images/logos patrocinadores/clientes gas/vitalaire.png" alt="Vitalaire">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/aconcagua.png" alt="Aconcagua">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/beraldi.png" alt="Beraldi">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/cisa.png" alt="CISA">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/clear.png" alt="Clear">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/dow.png" alt="Dow">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/fox-petrol.png" alt="Fox Petrol">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/gasaustral.png" alt="GasAustral">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/gedeon.png" alt="Gedeon">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/medanito.png" alt="Medanito">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/pluspetrol.png" alt="Pluspetrol">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/rodial.png" alt="Rodial">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/sapag.png" alt="Sapag">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/tgs.png" alt="TGS">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/tomrel.png" alt="Tomrel">
+                <img src="/assest/images/logos patrocinadores/clientes nuevos/transol.png" alt="Transol">
             </div>
         </div>
     </div>
@@ -506,7 +548,7 @@
                     </a> -->
                 </figure>
             </div>
-                        <div class="box">
+            <div class="box">
                 <h4>CONTACTO</h4>
                 <P>Dirección Postal: Ruta 22 KM 1215 (C.P. 8324)</P>
                 <P>Ciudad: Cipolletti</P>

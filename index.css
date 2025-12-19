@@ -119,90 +119,110 @@ li {
 
 /*empieza servicios-card*/
 
-.row {
-    margin-top: 80vh;
-}
-
-.row h1 {
-    text-align: center;
-    position: relative;
-    margin: 0 0 0px 0;
-}
-
-.row h4 {
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.card p {
-    padding: 0px 0px 0px 10px;
-    text-align: left;
-}
-
-div .card-body {
-    padding: 0;
-    margin: 0;
-}
-
-.col {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0px;
-    padding: 0 !important;
-}
-
-.card {
-    width: 270px;
-    margin-bottom: 20px;
-    height: 100%;
-    max-height: 310px;
-    min-height: 310px;
-    margin-top: 65px;
-    transition: ease 0.5s;
-    box-shadow: 2px 2px 8px grey !important;
-}
-
-.card img {
-    object-fit: cover;
-    height: 150px;
-    width: 270px;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 6px 6px 10px grey !important;
-}
-
-@media (max-width:590px) {
     .row {
-        margin: 1300px 0 0 0;
+        margin-top: 80vh;
     }
-}
 
-@media (max-width: 930px) {
-    div .col {
-        margin: 30px;
-    }
-    .div .row {
-        z-index: 10;
-        position: absolute;
-    }
-    .card {
-        margin: 0px;
-        padding-top: 0;
-    }
-    h1 {
-        position: relative;
-        display: block;
+    .row h1 {
         text-align: center;
-        padding-top: 0;
-        margin: 25px 0px;
-        margin-bottom: 0px;
-        z-index: 10;
+        position: relative;
+        margin: 0 0 0px 0;
     }
-}
 
+    .row h4 {
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .card p {
+        padding: 0px 0px 0px 10px;
+        text-align: left;
+    }
+
+    div .card-body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* CAMBIOS PRINCIPALES */
+    .row-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .first-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .second-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0px;
+        padding: 0 !important;
+    }
+
+    .card {
+        width: 270px;
+        margin-bottom: 20px;
+        height: 100%;
+        max-height: 310px;
+        min-height: 310px;
+        margin-top: 65px;
+        transition: ease 0.5s;
+        box-shadow: 2px 2px 8px grey !important;
+    }
+
+    .card img {
+        object-fit: cover;
+        height: 150px;
+        width: 270px;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 6px 6px 10px grey !important;
+    }
+
+    @media (max-width:590px) {
+        .row {
+            margin: 1300px 0 0 0;
+        }
+    }
+
+    @media (max-width: 930px) {
+        div .col {
+            margin: 30px;
+        }
+        .div .row {
+            z-index: 10;
+            position: absolute;
+        }
+        .card {
+            margin: 0px;
+            padding-top: 0;
+        }
+        h1 {
+            position: relative;
+            display: block;
+            text-align: center;
+            padding-top: 0;
+            margin: 25px 0px;
+            margin-bottom: 0px;
+            z-index: 10;
+        }
+    }
 
 /*empieza servicios-card*/
 
