@@ -11,9 +11,9 @@ body {
 }
 
 @font-face {
-  font-family: 'Eras';
-  src: url('/assest/fonts/ERASDEMI.TTF') format('truetype');
-  font-weight: normal;
+    font-family: 'Eras';
+    src: url('/assest/fonts/ERASDEMI.TTF') format('truetype');
+    font-weight: normal;
 }
 
 p,
